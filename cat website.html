@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <!--Header test-->
+        <h1>Hello World 'h1 tag'</h1>
+        <h2>Hello World 'h2 tag'</h2>
+        <h3>Hello World 'h3 tag'</h3>
+        <h4>Hello World 'h4 tag'</h4>
+        <h5>Hello World 'h5 tag'</h5>
+        <h6>Hello World 'h6 tag'</h6>
+        
+        <h2>CatPhotoApp</h2>
+        <main>
+            <h3>Cat Photos</h3>
+            <!-- add link to cat photos-->
+            <p>Click here to view more <a href="#" target="_blank">Cat Photos.</a></p>
+            
+            <a href="#"><img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A sophisticated cat with a tie."></a>
+            <h3>Cat Lists</h3>
+            <div class="lists"><!-- good for styling a whole sections with css-->
+                <p>Things cats <em>love</em>:</p>
+                <ul>
+                    <li>Cat nip</li>
+                    <li>Lasers</li>
+                    <li>Lasagna</li>
+                </ul>
+                <img src="lasagna.jpg" alt="lasagna"><!-- this picture needs to be in the same folder based on what we wrote for src-->
+                <p>Things cats <strong>hate</strong>:</p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+            <img src="cats.jpg" alt="cats">
+            <form action="/submit-cat-photo"><!--not doing this part yet-->
+                <label for="indoor"><input type="radio" name="indoor-outdoor" id="indoor" checked>Indoor</label>
+                <br>
+                <label for="outdoor"><input type="radio" name="indoor-outdoor" id="outdoor">outdoor</label>
+                <br>
+                <label for="loving"><input id="loving" type="checkbox" name="personality" checked>Loving</label>
+                <br>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality">Lazy</label>
+                <br>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality">Energetic</label>
+                <br>
+                <input type="text" placeholder="cat photo URL" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p><small>No Copyright - <a href="https://freecodecamp.org">freecodecamp.org</a></small></p>
+        </footer>
+    </body>
+</html>
